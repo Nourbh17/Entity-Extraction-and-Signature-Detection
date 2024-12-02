@@ -1,13 +1,13 @@
 # Extraction des Entités et Détection des Signatures 
 
-Dans ce projet, je me suis concentré sur l'automatisation de deux tâches principales : l'extraction d'entités et la détection des signatures à partir de documents PDF, spécifiquement des contrats d'assurance ou des lettres formelles. L'objectif était d'extraire les informations essentielles contenues dans ces documents, telles que le nom de l'assuré, l'adresse, la date d'effet, et de vérifier si le document était signé par les deux parties concernées.
+Dans ce projet, je me suis concentré sur les deux tâches principales : l'extraction d'entités et la détection des signatures à partir de documents PDF, spécifiquement des contrats d'assurance. L'objectif était d'extraire les informations essentielles contenues dans ces documents, telles que le nom de l'assuré, l'adresse, la date d'effet, et de vérifier si le document était signé par les deux parties concernées.
 
 ## Approche et Techniques Utilisées :
 
 ![image](https://github.com/user-attachments/assets/2c80d747-b1ac-40c9-9643-697a2bd6a45e) 
 
 
-L'approche a été basée sur le traitement de documents structurés, suivant un modèle spécifique, comme le PDF de contrat d'assurance fourni. Ces documents contiennent souvent des informations répétitives et placées à des positions précises dans le texte, ce qui les rend adaptés à l'extraction automatisée.
+L'approche a été basée sur le traitement de documents structurés, suivant un modèle spécifique, (le modèle de PDF fourni). Ces documents contiennent souvent des informations répétitives et placées à des positions précises dans le texte, ce qui les rend adaptés à l'extraction automatisée.
 
 ### 1-Extraction de texte :
 
@@ -28,15 +28,17 @@ Après avoir extrait les noms du document, j'ai utilisé une fonction de compara
 
 ## Outils et Bibliothèques Utilisées :
 
+Expressions régulières (regex) : pour l'extraction des entités à partir du texte.
+
 pdfplumber :  pour l'extraction de texte des PDF.
 
 pdf2image : pour la conversion des pages PDF en images pour la détection des signatures.
 
 OpenCV : pour le traitement d'image et la détection des régions de signatures.
 
-Expressions régulières (regex) : pour l'extraction des entités à partir du texte.
+
 
 ## Conclusion :
-Ce projet a démontré avec succès une méthode automatisée pour extraire des entités et détecter des signatures à partir de documents structurés tels que des contrats d'assurance ou des lettres formelles. En utilisant l'extraction de texte, le traitement d'image et les expressions régulières, j'ai pu automatiser l'extraction d'informations clés et valider les signatures.
+Ce projet a démontré avec succès une méthode automatisée pour extraire des entités et détecter des signatures à partir de documents structurés tels que des contrats d'assurance. En utilisant l'extraction de texte, le traitement d'image et les expressions régulières, j'ai pu automatiser l'extraction d'informations clés et valider les signatures.
 
 Si plusieurs modèles de contrats existent, cette approche peut être améliorée en utilisant des modèles de langage de grande taille (LLMs) avec des systèmes RAG (Retrieval-Augmented Generation). Ces systèmes permettraient de mieux comprendre le texte et les informations présentes, et pourraient générer à la fin les entités demandées à partir de tout type de document, quel que soit son format spécifique.
