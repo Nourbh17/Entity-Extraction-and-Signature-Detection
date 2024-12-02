@@ -3,6 +3,10 @@
 Dans ce projet, je me suis concentré sur l'automatisation de deux tâches principales : l'extraction d'entités et la détection des signatures à partir de documents PDF, spécifiquement des contrats d'assurance ou des lettres formelles. L'objectif était d'extraire les informations essentielles contenues dans ces documents, telles que le nom de l'assuré, l'adresse, la date d'effet, et de vérifier si le document était signé par les deux parties concernées.
 
 ## Approche et Techniques Utilisées :
+
+![image](https://github.com/user-attachments/assets/2c80d747-b1ac-40c9-9643-697a2bd6a45e)
+
+
 L'approche a été basée sur le traitement de documents structurés, suivant un modèle spécifique, comme le PDF de contrat d'assurance fourni. Ces documents contiennent souvent des informations répétitives et placées à des positions précises dans le texte, ce qui les rend adaptés à l'extraction automatisée.
 
 ### 1-Extraction de texte :
