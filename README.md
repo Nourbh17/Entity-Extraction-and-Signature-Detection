@@ -4,7 +4,7 @@ Dans ce projet, je me suis concentré sur l'automatisation de deux tâches princ
 
 ## Approche et Techniques Utilisées :
 
-![image](https://github.com/user-attachments/assets/2c80d747-b1ac-40c9-9643-697a2bd6a45e)
+![image](https://github.com/user-attachments/assets/2c80d747-b1ac-40c9-9643-697a2bd6a45e) 
 
 
 L'approche a été basée sur le traitement de documents structurés, suivant un modèle spécifique, comme le PDF de contrat d'assurance fourni. Ces documents contiennent souvent des informations répétitives et placées à des positions précises dans le texte, ce qui les rend adaptés à l'extraction automatisée.
